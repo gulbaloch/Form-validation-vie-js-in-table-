@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+   <title> introduction to javascript</title>
+</head>
+
+
+
+
+<body>
+   <form onsubmit="return F_name() ,fun_lname(),fun_sID(),fun_deprt(),fun_sem()">
+      <table>
+
+         <h1 style="text-align: center;">Registration form </h1>
+         <tr>
+            <td>firstname:</td>
+            <td><input id="fname" type="text" firstname="c1" placeholder="firstname" value=""><input id="error1"
+                  type="text" firstname="c1" value=""></td>
+         </tr>
+         <tr>
+            <td>lastname:</td>
+            <td><input id="lname" type="text" Lastname="c1" placeholder="lastname" value=""><input id="error2"
+                  type="text" Lastname="c1" value=""> </td>
+         </tr>
+         <tr>
+            <td>studentId:</td>
+            <td><input id="sid" type="text" StudentId="c1" placeholder="studentId" value=""><input id="error3"
+                  type="text" StudentId="c1" value=""></td>
+         </tr>
+         <tr>
+
+            <td>Department:</td>
+            <td><input id="deprt" type="text" Department="c1" placeholder="Department" value=""><input id="error4"
+                  type="text" Department="c1" value=""></td>
+         </tr>
+         <tr>
+            <td>Semester:</td>
+            <td><input id="sem" type="text" Semester="c1" placeholder="Semester" value=""><input id="error5" type="text"
+                  Semester="c1" value=""></td>
+         </tr>
+         <tr>
+            <td>
+               <input type="submit" value="submit">
+            </td>
+         </tr>
+
+      </table>
+   </form>
+
+
+
+<script>
+   // 1st funcation of  FirstNAme Input field starts hare
+   function F_name() {
+      var fname = document.getElementById("fname").value;
+      if (fname === "") {
+         document.getElementById("error1").value = "*****";
+         return false;
+      }
+
+   }
+   // second function starts  LastName input field
+
+   function fun_lname() {
+      var lname = document.getElementById("lname").value;
+      if (lname === "") {
+         document.getElementById("error2").value = "*****";
+         return false;
+      }
+    
+      
+   }
+   // third function strat here studentID input field
+   function fun_sID() {
+
+      var sid = document.getElementById("sid").value;
+      if (sid === "") {
+         document.getElementById("error3").value = "*****";
+         return false;
+      }
+      
+   }
+   //  4th funcation starts  department input field
+   function fun_deprt() {
+      var deprt = document.getElementById("deprt").value;
+
+      if (deprt === "") {
+         document.getElementById("error4").value = "*****";
+         return false;
+      }
+      
+   }
+
+
+   // 5th funcation starts herer of semester input field 
+
+   function fun_sem() {
+      var Semester = document.getElementById("sem").value;
+
+      if (Semester === "") {
+      
+         document.getElementById("error5").value = "*****";
+         return false;
+      }
+     
+   }
+
+
+
+
+
+</script>
+</body>
+</html>
